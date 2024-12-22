@@ -707,7 +707,7 @@ select:after{
 
     .h_ru{
         padding: 40px;
-        background: url(/img/bg1000.png);
+        background: url(../img/bg1000.png);
         background-repeat: no-repeat;
         background-position: center;
         display: flex;
@@ -785,7 +785,7 @@ select:after{
         display: flex;
         margin: auto;
         flex-direction: column;
-        background: url(/img/bl1bg_mini.png);
+        background: url(../img/bl1bg_mini.png);
         background-repeat: no-repeat;
         background-position: center;
         padding-left: auto;
@@ -1042,7 +1042,7 @@ select:after{
         display: flex;
         padding: auto;
         flex-direction: column;
-        background: url(/img/bl1bg_xmini.png);
+        background: url(../img/bl1bg_xmini.png);
         background-repeat: no-repeat;
         background-position: center;
         justify-content: space-between; 
@@ -1148,7 +1148,7 @@ select:after{
     .h_ru {
         height: 500px;
         background-repeat: no-repeat;
-        background-image: url(/img/bg_h.png);
+        background-image: url(../img/bg_h.png);
         background: linear-gradient(to right, rgb(243,191,26), rgb(243,165,21));
         justify-content: center;
         margin: 0;
@@ -1239,7 +1239,7 @@ select:after{
         max-width: 1920px;
         display: flex;
         flex-direction: column;
-        background: url(/img/Ellipse10.png);
+        background: url(../img/Ellipse10.png);
         background-repeat: no-repeat;
         background-size: 1870px;
         background-position: top;
