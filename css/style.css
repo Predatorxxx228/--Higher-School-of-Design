@@ -37,6 +37,10 @@ a:active {
     color:#fff;
 }
 
+.right{
+    gap:30px;
+}
+
 .h_ru{
 
     height: 116px;
@@ -48,23 +52,30 @@ a:active {
     margin: 0;
 }
 
+.right{
+    gap:0px;
+    display: flex;
+    flex-direction:row;
+}
+
 .header_ru{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: auto;
     align-items: center;
+    width: 1209px;
 }
 
 .btts{
-    margin-left: 43px;
+    margin:0;
     display: flex;
     gap: 26px;
     color: #fff;
 }
 
 .btts_mini {
-    margin-left: 43px;
+    margin:0;
     gap: 26px;
     color: #fff;
     display: none;
@@ -114,18 +125,34 @@ select:after{
     flex-direction: column;
     margin-bottom: 70px;
 }
-
+.tit3{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 70px;
+}
 
 .nws{
-    width: 224px;
+    width: 130px;
+    animation: nws_anim 2s;
+    height: 7px;
 }
 
 .abvsd{
-    width: 650px;
+    width: 810px;
+    animation: abvsd_anim 2s;
+    height: 7px;
 }
 
 .vsd{
-    width: 617px;
+    width: 647px;
+    animation: vsd_anim 2s;
+    height: 7px;
+}
+
+.tch{
+    width: 380px;
+    animation: tch_anim 2s;
+    height: 7px;
 }
 
     swiper-container {
@@ -323,10 +350,10 @@ select:after{
 
 
         .first-s{
-            padding-left: 140px;
+            padding-left: 95px;
             font-size: 30px;
             display: flex;
-            gap: 370px;
+            gap: 400px;
             flex-direction: row;
         }
 
@@ -493,10 +520,6 @@ select:after{
     color: #404040;
 }
 
-.tch{
-    width: 700px;
-}
-
 .tit2{
     display: flex;
     flex-direction: column;
@@ -556,7 +579,46 @@ select:after{
      font-size: 24px;
      width: 315px;
  }
+ 
+ @keyframes vsd_anim{
+    from{
+      width: 20px;
+    }
 
+    to{
+        width: 650px;
+    }
+ }
+
+ @keyframes nws_anim{
+    from{
+      width: 10px;
+    }
+
+    to{
+        width: 130px;
+    }
+ }
+
+ @keyframes abvsd_anim{
+    from{
+      width: 10px;
+    }
+
+    to{
+        width: 810px;
+    }
+ }
+
+ @keyframes tch_anim{
+    from{
+      width: 10px;
+    }
+
+    to{
+        width: 380px;
+    }
+ }
 @media screen and (max-width: 1372px) {
     .bl1 {
         max-width: 1009px;
@@ -565,6 +627,9 @@ select:after{
         padding-bottom: 30px;
     }
     .tit1 {
+        margin-bottom: 40px;
+    }
+    .tit3 {
         margin-bottom: 40px;
     }
     .mySwiper {
@@ -592,7 +657,7 @@ select:after{
     .btts_mini {
         margin: 0 auto;
         display: flex;
-        gap: 26px;
+        gap: 357px;
         color: #fff;
     }
     .bl2 {
@@ -716,6 +781,10 @@ select:after{
          height: 160px;
         gap: 40px;
     }
+
+    .header_ru{
+        max-width: 1009px;
+    }
      
      .prep-sost{
         width: 1372px;
@@ -752,6 +821,9 @@ select:after{
 
 }
 @media screen and (max-width: 1070px) {
+.btts_mini{
+    gap: 160px;
+}
     .bl1 {
         max-width: 650px;
         margin: auto;
@@ -759,11 +831,42 @@ select:after{
         height: auto;
     }
     .tit1 {
+        margin: auto;
         margin-bottom: 40px;
         display: flex;
-        justify-content: center;
-
+        width: 600px;
     }
+    .vsd{
+        width: 160px;
+        animation: vsd1_anim 2s;
+    } 
+    
+    .tch{
+    width: 380px;
+    animation: tch1_anim 2s;
+    }
+    
+    .nws {
+        width: 130px;
+        align-items: center;
+        animation: nws1_anim 2s;
+    }
+    .abvsd {
+        width: 240px;
+        align-items: center;
+        animation: abvsd1_anim 2s;
+    } 
+    .headers {
+        align-items: left;
+    }
+
+    .tit3 {
+        margin: auto;
+        margin-bottom: 40px;
+        display: flex;
+        width: 600px;
+    }
+
     .mySwiper {
         height: auto;
         max-width: 655px;
@@ -862,18 +965,10 @@ select:after{
         margin: auto;
         margin-top: 60px;
     }
-    .headers {
-        text-align: center;
-    }
-    .nws {
-        width: 300px;
-        margin: 0 auto;
-    }
-    .abvsd {
-        width: 700px;
-        margin: 0 auto;
+   .header_ru{
+     max-width: 610px;
+   }
 
-    }
     .wcommunity_colored,
     .wcommunity_wrap  {
         
@@ -923,16 +1018,13 @@ select:after{
     }
 
     .tit2{
-   width: 700px;
+   width: 600px;
    margin: auto;
    display: flex;
    flex-direction: column;
-   align-items: left;
 }
 
-.tch{
-    width: 700px;
-}
+
 
 .prep-sost{
     padding-top: 70px;
@@ -974,6 +1066,46 @@ select:after{
 
 }
 
+@keyframes vsd1_anim{
+    from{
+      width: 20px;
+    }
+
+    to{
+        width: 160px;
+    }
+ }
+
+ @keyframes nws1_anim{
+    from{
+      width: 10px;
+    }
+
+    to{
+        width: 130px;
+    }
+ }
+
+ @keyframes abvsd1_anim{
+    from{
+      width: 10px;
+    }
+
+    to{
+        width: 240px;
+    }
+ }
+
+ @keyframes tch1_anim{
+    from{
+      width: 10px;
+    }
+
+    to{
+        width: 380px;
+    }
+ }
+
 @media screen and (max-width: 755px) {
     .logo{
         justify-content: center;
@@ -984,12 +1116,16 @@ select:after{
         height: auto;
         margin: auto;
     }
+
+    .tit1{
+        width: 320px;
+        
+    
+    }
     .headers {
         font-size: 19px;
     }
-    .vsd {
-        max-width: 330px;
-    }
+
     .mySwiper {
         max-width: 330px;
         height: 96px;
@@ -1019,12 +1155,26 @@ select:after{
     .bl3 {
         padding:0px;
     }
+
+    .vsd {
+        width: 310px;
+        animation: vsd2_anim 2s;
+    }
+
     .nws {
-        width: 100px;
+        width: 60px;
+        animation: nws2_anim 2s;
     }
     .abvsd {
-        width: 310px;
+        width: 80px;
+        animation: abvsd2_anim 2s;
     }
+
+    .tch{
+        width: 180px;
+        animation: tch2_anim 2s;
+    }
+
     .first-s,
     .second-s {
         font-size: 19px !important;
@@ -1144,6 +1294,7 @@ select:after{
     .header_ru {
         display: flex;
         flex-direction: column;
+        max-width: 400px;
     }
     .h_ru {
         height: 500px;
@@ -1154,7 +1305,7 @@ select:after{
         margin: 0;
     }
 
-    .langg{
+    #lang{
         margin-right: 70px;
     }
 
@@ -1197,13 +1348,10 @@ select:after{
        }
 
    .tit2{
-    width: 330px;
+    width: 200px;
+    align-items: center;
 
 }
-
-    .tch{
-        width: 330px;
-    }
 
     .person{
         display: flex;
@@ -1221,7 +1369,7 @@ select:after{
     
     .name{
         font-size: 18px;
-        width: 240px;
+        width: 220px;
         text-align: center;
     }
     
@@ -1291,12 +1439,6 @@ select:after{
         text-decoration: underline;
       }
 
-      .vsd{
-        margin: auto;
-        width: 300px;
-        
-      }
-
       .column_4{
         width: 500px;
        }
@@ -1304,4 +1446,46 @@ select:after{
        .vector{
         height: 160px;
        }
+    
+
+
+    @keyframes vsd2_anim{
+        from{
+          width: 20px;
+        }
+    
+        to{
+            width: 310px;
+        }
+     }
+    
+     @keyframes nws2_anim{
+        from{
+          width: 10px;
+        }
+    
+        to{
+            width: 60px;
+        }
+     }
+    
+     @keyframes abvsd2_anim{
+        from{
+          width: 10px;
+        }
+    
+        to{
+            width: 240px;
+        }
+     }
+    
+     @keyframes tch2_anim{
+        from{
+          width: 10px;
+        }
+    
+        to{
+            width: 180px;
+        }
+     }
 }
